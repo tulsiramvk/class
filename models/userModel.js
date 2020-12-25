@@ -9,24 +9,24 @@ const userSchema = mongoose.Schema({
     },
     email:{
         type:String,
-        unique:true,
+        unique:true
     },
     phn:{
         type:Number,
         unique:true
     },
     dob:{
-        type:Date
+        type:Date,
     },
     bio:{
-        type:String
+        type:String,
     },
     Adult:{
-        type:Boolean
+        type:Boolean,
     }
 
 })
 
 const User = mongoose.model('User',userSchema)
 
-module.exports = {User}
+module.exports = User
